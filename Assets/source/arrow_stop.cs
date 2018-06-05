@@ -5,10 +5,9 @@ public class arrow_stop : MonoBehaviour {
 
 	public static float arrow_x = 0;
 
-
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("SIBAL JOTTO ANDAE");
+		
 	}
 	
 	// Update is called once per frame
