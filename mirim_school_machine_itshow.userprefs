@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\source\arrow_move.cs">
+    <Files>
+      <File FileName="Assets\source\show_play_result.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\arrow_move.cs" Line="101" Column="35" />
+      <File FileName="Assets\source\arrow_stop.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\go_home.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\initialization.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\main_keep_sound.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\move_stop.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\result_exit_bnt.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\result_replay_btn.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\show_complete.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\start_way.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\start_waytoplay.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\touch_mission_layout.cs" Line="1" Column="1" />
+      <File FileName="Assets\source\start.cs" Line="15" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

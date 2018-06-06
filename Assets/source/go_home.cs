@@ -16,6 +16,5 @@ public class go_home : MonoBehaviour {
 
 	public void Click(){
 		SceneManager.LoadScene (0);
-		show_play_result.reset = false;
 	}
 }

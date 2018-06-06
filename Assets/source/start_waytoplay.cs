@@ -15,7 +15,6 @@ public class start_waytoplay : MonoBehaviour {
     }*/
 	public void Click()
     {
-		show_play_result.reset = false;
 		//SceneManager.LoadScene(2);
 		start.mission_num = Random.Range (1, 4);
 		//1 : summer 2 : auttum 3 : winter

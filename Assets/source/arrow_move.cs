@@ -93,13 +93,13 @@ public class arrow_move : MonoBehaviour {
 	void move(){
 		switch(stage){ //속도 조절 switch문 (갈수록 빨라짐)
 		case 0: arrow_pos = 0.15f; break;
-		case 1: arrow_pos = 0.25f; break;
-		case 2: arrow_pos = 0.25f; break;
-		case 3: arrow_pos = 0.25f; break;
-		case 4: arrow_pos = 0.35f; break;
-		case 5: arrow_pos = 0.35f; break;
-		case 6: arrow_pos = 0.4f; break;
-		case 7: arrow_pos = 0.4f; break;
+		case 1: arrow_pos = 0.2f; break;
+		case 2: arrow_pos = 0.2f; break;
+		case 3: arrow_pos = 0.2f; break;
+		case 4: arrow_pos = 0.25f; break;
+		case 5: arrow_pos = 0.25f; break;
+		case 6: arrow_pos = 0.3f; break;
+		case 7: arrow_pos = 0.35f; break;
 		default: break;
 		} //end of switch ~ case
 
