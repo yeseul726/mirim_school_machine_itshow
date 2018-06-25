@@ -18,6 +18,6 @@ public class result_replay_btn : MonoBehaviour {
 	public void Click()
 	{
 		SceneManager.LoadScene(2);
-		show_play_result.reset = false;
+		//show_play_result.reset = false;
 	}
 }

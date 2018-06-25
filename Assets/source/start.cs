@@ -11,6 +11,7 @@ public class start : MonoBehaviour {
 
 	void Start()
 	{
+		
 	}
 
     public void Click()

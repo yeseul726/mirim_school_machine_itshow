@@ -26,6 +26,9 @@ public class show_play_result : MonoBehaviour {
 		hair1.SetActive (false); hair2.SetActive (false); hair3.SetActive (false); hair4.SetActive (false);
 		outer1.SetActive (false); outer2.SetActive (false); outer3.SetActive (false); outer4.SetActive (false);
 		backpack1.SetActive (false); backpack2.SetActive (false); backpack3.SetActive (false); backpack4.SetActive (false);
+		for (int i = 0; i < 8; i++) {
+			accumulate.accu_tmp[i] = 0;
+		}
 	}
 	
 	// Update is called once per frame
@@ -35,8 +38,30 @@ public class show_play_result : MonoBehaviour {
 
 
 	public void show_result() {
+		/*if (reset == false) {
+			Debug.Log ("show_result == " + reset);
+			top1.SetActive (false); top2.SetActive (false); top3.SetActive (false); top4.SetActive (false);
+			bottom1.SetActive (false); bottom2.SetActive (false); bottom3.SetActive (false); bottom4.SetActive (false);
+			stocking1.SetActive (false); stocking2.SetActive (false); stocking3.SetActive (false); stocking4.SetActive (false);
+			socks1.SetActive (false); socks2.SetActive (false); socks3.SetActive (false); socks4.SetActive (false);
+			hair_tie1.SetActive (false); hair_tie2.SetActive (false); hair_tie3.SetActive (false); hair_tie4.SetActive (false);
+			hair1.SetActive (false); hair2.SetActive (false); hair3.SetActive (false); hair4.SetActive (false);
+			outer1.SetActive (false); outer2.SetActive (false); outer3.SetActive (false); outer4.SetActive (false);
+			backpack1.SetActive (false); backpack2.SetActive (false); backpack3.SetActive (false); backpack4.SetActive (false);
+			reset = true;
+		}*/
 		Debug.Log ("aaaaaaaaa");
+		Debug.Log ("show_result == " + reset);
 		int i;
+		top1.SetActive (false); top2.SetActive (false); top3.SetActive (false); top4.SetActive (false);
+		bottom1.SetActive (false); bottom2.SetActive (false); bottom3.SetActive (false); bottom4.SetActive (false);
+		stocking1.SetActive (false); stocking2.SetActive (false); stocking3.SetActive (false); stocking4.SetActive (false);
+		socks1.SetActive (false); socks2.SetActive (false); socks3.SetActive (false); socks4.SetActive (false);
+		hair_tie1.SetActive (false); hair_tie2.SetActive (false); hair_tie3.SetActive (false); hair_tie4.SetActive (false);
+		hair1.SetActive (false); hair2.SetActive (false); hair3.SetActive (false); hair4.SetActive (false);
+		outer1.SetActive (false); outer2.SetActive (false); outer3.SetActive (false); outer4.SetActive (false);
+		backpack1.SetActive (false); backpack2.SetActive (false); backpack3.SetActive (false); backpack4.SetActive (false);
+
 		if (reset) {
 			for (i = 0; i < 8; i++) {
 				Debug.Log ("result_tmp : " + result_tmp [i]);
@@ -83,46 +108,22 @@ public class show_play_result : MonoBehaviour {
 				} else if (i == 4) {
 					if (result_tmp [i] == 1) {
 						hair_tie4.SetActive (true);
-						hair_tie1.SetActive (false);
-						hair_tie2.SetActive (false);
-						hair_tie3.SetActive (false);
 					} else if (result_tmp [i] == 2) {
 						hair_tie2.SetActive (true);
-						hair_tie1.SetActive (false);
-						hair_tie3.SetActive (false);
-						hair_tie4.SetActive (false);
 					} else if (result_tmp [i] == 3) {
 						hair_tie3.SetActive (true);
-						hair_tie1.SetActive (false);
-						hair_tie2.SetActive (false);
-						hair_tie4.SetActive (false);
 					} else if (result_tmp [i] == 4) {
 						hair_tie1.SetActive (true);
-						hair_tie2.SetActive (false);
-						hair_tie3.SetActive (false);
-						hair_tie4.SetActive (false);
 					}
 				} else if (i == 5) {
 					if (result_tmp [i] == 1) {
 						hair2.SetActive (true);
-						hair1.SetActive (false);
-						hair3.SetActive (false);
-						hair4.SetActive (false);
 					} else if (result_tmp [i] == 2) {
 						hair1.SetActive (true);
-						hair2.SetActive (false);
-						hair3.SetActive (false);
-						hair4.SetActive (false);
 					} else if (result_tmp [i] == 3) {
 						hair3.SetActive (true);
-						hair1.SetActive (false);
-						hair2.SetActive (false);
-						hair4.SetActive (false);
 					} else if (result_tmp [i] == 4) {
 						hair4.SetActive (true);
-						hair1.SetActive (false);
-						hair2.SetActive (false);
-						hair3.SetActive (false);
 					}
 				} else if (i == 6) {
 					if (result_tmp [i] == 1) {

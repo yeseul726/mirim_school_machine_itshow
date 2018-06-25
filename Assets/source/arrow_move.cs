@@ -154,6 +154,7 @@ public class arrow_move : MonoBehaviour {
 				bnt_tmp = false;
 				Debug.Log ("stage1 blank1");
 				show_play_result.result_tmp [0] = 1;
+				accumulate.accu_tmp [0] = 1;
 				top.SetActive (false);
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result [0] = top2;
@@ -162,6 +163,7 @@ public class arrow_move : MonoBehaviour {
 				bnt_tmp = false;
 				Debug.Log ("stage1 blank2");
 				show_play_result.result_tmp [0] = 2;
+				accumulate.accu_tmp [0] = 2;
 				top.SetActive (false);
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result [0] = top3;
@@ -170,6 +172,7 @@ public class arrow_move : MonoBehaviour {
 				bnt_tmp = false;
 				Debug.Log ("stage1 blank3");
 				show_play_result.result_tmp [0] = 3;
+				accumulate.accu_tmp [0] = 3;
 				top.SetActive (false);
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result [0] = top4;
@@ -178,14 +181,15 @@ public class arrow_move : MonoBehaviour {
 				bnt_tmp = false;
 				Debug.Log ("stage1 blank4");
 				show_play_result.result_tmp [0] = 4;
+				accumulate.accu_tmp [0] = 4;
 				top.SetActive (false);
 			}
 			Debug.Log ("score" + score);
 			break;
 
-		default:
-			Debug.Log ("hh");
-			break;
+		//default:
+			//Debug.Log ("hh");
+			//break;
 
 		case 2: //하의
 			Invoke ("", 1.5f);
@@ -197,24 +201,28 @@ public class arrow_move : MonoBehaviour {
 				bnt_tmp = false;
 				Debug.Log ("stage2 blank1");
 				show_play_result.result_tmp [1] = 1;
+				accumulate.accu_tmp [1] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result[1] = bottom2;
 				score += 0;
 				bnt_tmp = false;
 				Debug.Log ("stage2 blank2");
 				show_play_result.result_tmp [1] = 2;
+				accumulate.accu_tmp [1] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result[1] = bottom3;
 				score += 0;
 				bnt_tmp = false;
 				Debug.Log ("stage2 blank3");
 				show_play_result.result_tmp [1] = 3;
+				accumulate.accu_tmp [1] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result[1] = bottom4;
 				score += 0;
 				bnt_tmp = false;
 				Debug.Log ("stage2 blank4");
 				show_play_result.result_tmp [1] = 4;
+				accumulate.accu_tmp [1] = 4;
 			}
 			Debug.Log ("score" + score);
 			break;
@@ -230,24 +238,28 @@ public class arrow_move : MonoBehaviour {
 				bnt_tmp = false;
 				Debug.Log ("stage3 blank1");
 				show_play_result.result_tmp [2] = 1;
+				accumulate.accu_tmp [2] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result[2] = stocking2;
 				score += 0;
 				bnt_tmp = false;
 				Debug.Log ("stage3 blank2");
 				show_play_result.result_tmp [2] = 2;
+				accumulate.accu_tmp [2] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result[2] = stocking3;
 				score += 2;
 				bnt_tmp = false;
 				Debug.Log ("stage3 blank3");
 				show_play_result.result_tmp [2] = 3;
+				accumulate.accu_tmp [2] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result[2] = stocking4;
 				score += 10;
 				bnt_tmp = false;
 				Debug.Log ("stage3 blank4");
 				show_play_result.result_tmp [2] = 4;
+				accumulate.accu_tmp [2] = 4;
 			}
 			Debug.Log ("score" + score);
 			break;
@@ -261,21 +273,25 @@ public class arrow_move : MonoBehaviour {
 				score += 2;
 				bnt_tmp = false;
 				show_play_result.result_tmp [3] = 1;
+				accumulate.accu_tmp [3] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result[3] = socks2;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [3] = 2;
+				accumulate.accu_tmp [3] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result[3] = socks3;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [3] = 3;
+				accumulate.accu_tmp [3] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result[3] = socks4;
 				score += 10;
 				bnt_tmp = false;
 				show_play_result.result_tmp [3] = 4;
+				accumulate.accu_tmp [3] = 4;
 			}
 			Debug.Log ("score" + score);
 			break;
@@ -289,21 +305,25 @@ public class arrow_move : MonoBehaviour {
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [4] = 1;
+				accumulate.accu_tmp [4] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result[4] = hair_tie2;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [4] = 2;
+				accumulate.accu_tmp [4] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result[4] = hair_tie3;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [4] = 3;
+				accumulate.accu_tmp [4] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result[4] = hair_tie4;
 				score += 10;
 				bnt_tmp = false;
 				show_play_result.result_tmp [4] = 4;
+				accumulate.accu_tmp [4] = 4;
 			}
 			Debug.Log ("score" + score);
 			break;
@@ -317,21 +337,25 @@ public class arrow_move : MonoBehaviour {
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [5] = 1;
+				accumulate.accu_tmp [5] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result[5] = hair2;
 				score += 10;
 				bnt_tmp = false;
 				show_play_result.result_tmp [5] = 2;
+				accumulate.accu_tmp [5] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result[5] = hair3;
 				score += 10;
 				bnt_tmp = false;
 				show_play_result.result_tmp [5] = 3;
+				accumulate.accu_tmp [5] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result[5] = hair4;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [5] = 4;
+				accumulate.accu_tmp [5] = 4;
 			}
 			Debug.Log ("score" + score);
 			break;
@@ -345,21 +369,25 @@ public class arrow_move : MonoBehaviour {
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [6] = 1;
+				accumulate.accu_tmp [6] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result[6] = outer2;
 				score += 10;
 				bnt_tmp = false;
 				show_play_result.result_tmp [6] = 2;
+				accumulate.accu_tmp [6] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result[6] = outer3;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [6] = 3;
+				accumulate.accu_tmp [6] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result[6] = outer4;
 				score += 2;
 				bnt_tmp = false;
 				show_play_result.result_tmp [6] = 4;
+				accumulate.accu_tmp [6] = 4;
 			}
 			Debug.Log ("score" + score);
 			break;
@@ -371,21 +399,25 @@ public class arrow_move : MonoBehaviour {
 				score += 10;
 				bnt_tmp = false;
 				show_play_result.result_tmp [7] = 1;
+				accumulate.accu_tmp [7] = 1;
 			} else if (arrow_stop.arrow_x >= start_second_blk && arrow_stop.arrow_x <= end_second_blk && bnt_tmp == true) { //칸2
 				play_result [7] = backpack2;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [7] = 2;
+				accumulate.accu_tmp [7] = 2;
 			} else if (arrow_stop.arrow_x >= start_third_blk && arrow_stop.arrow_x <= end_third_blk && bnt_tmp == true) { //칸3
 				play_result [7] = backpack3;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [7] = 3;
+				accumulate.accu_tmp [7] = 3;
 			} else if (arrow_stop.arrow_x >= start_fourth_blk && arrow_stop.arrow_x <= end_fourth_blk && bnt_tmp == true) { //칸4
 				play_result [7] = backpack4;
 				score += 0;
 				bnt_tmp = false;
 				show_play_result.result_tmp [7] = 4;
+				accumulate.accu_tmp [7] = 4;
 			}
 			pos.x = arrow_stop.arrow_x;
 			transform.position = pos;
@@ -395,9 +427,11 @@ public class arrow_move : MonoBehaviour {
 			start.player_score = score;
 			start.player_season_num = season;
 			Invoke ("result", 1.5f);
+			cnt++;
+
+
 			break;
 		} //end of switch
-
 	}
 
 	public void result(){
