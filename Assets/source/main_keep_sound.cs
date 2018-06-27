@@ -5,7 +5,7 @@ public class main_keep_sound : MonoBehaviour {
 
 	private static main_keep_sound _instance;
 
-	void Awake(){
+	/*void Awake(){
 		if (!_instance)
 		{
 			_instance = this;
@@ -15,7 +15,7 @@ public class main_keep_sound : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 		DontDestroyOnLoad(transform.gameObject);
-	}
+	}*/
 		
 	// Use this for initialization
 	void Start () {

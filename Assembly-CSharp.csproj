@@ -48,6 +48,7 @@
      <Compile Include="Assets\source\accumulate.cs" />
      <Compile Include="Assets\source\arrow_move.cs" />
      <Compile Include="Assets\source\arrow_stop.cs" />
+     <Compile Include="Assets\source\bgmDontStop.cs" />
      <Compile Include="Assets\source\go_home.cs" />
      <Compile Include="Assets\source\go_next.cs" />
      <Compile Include="Assets\source\go_prev.cs" />
